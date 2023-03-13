@@ -98,11 +98,10 @@ NOTA: Recuerde entregar el link de acceso al video. Puede alojarse en YouTube, D
 
 <br/>
 Aqui te sintetizamos que es lo que consideramos un MVP aprobatorio, y la diferencia con un producto completo.
-
-
+https://github.com/HX-PRomero/PI_ML_OPS/blob/main/src/MVP_MLops.png
 
 <p align="center">
-<img src="https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data08_MLops/src/MVP_MLops.PNG"  height=250>
+<img src="https://github.com/HX-PRomero/PI_ML_OPS/blob/main/src/MVP_MLops.png"  height=250>
 </p>
 
 
@@ -114,7 +113,6 @@ Aqui te sintetizamos que es lo que consideramos un MVP aprobatorio, y la diferen
 ## **Material de apoyo**
 
 En este mismo repositorio podras encontrar algunos [links de ayuda](https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data08_MLops/Material%20de%20apoyo.md). Recuerda que no son los unicos recursos que puedes utilizar!
-
 
 
   
