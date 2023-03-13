@@ -33,7 +33,7 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 <img src="https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data07_MLops_API/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
 </p>
 
-
+<sub> Nota que aqui se reflejan procesos no herramientas tecnologicas. Has el ejercicio de entender cual herramienta del stack corresponde a cual parte del proceso<sub/>
 
 ## **Propuesta de trabajo (requerimientos de aprobación)**
 
@@ -66,9 +66,7 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 <br/>
 
 
-**`Deployment`**: Tus compañeros cercanos han usado [Deta](https://www.deta.sh/?ref=fastapi) para hacer el deployment de aplicaciones, además, no necesita dockerizacion así que es el primer candidato que encuentras!
-
-Tambien sabes sobre [Railway](https://railway.app/) y [Render](https://render.com/docs/free#free-web-services) , aunque estos necesitan dockerizacion #Decisiones 👀
+**`Deployment`**: Conoces sobre [Render](https://render.com/docs/free#free-web-services) y tienes un [tutorial de Render](https://github.com/HX-FNegrete/render-fastapi-tutorial) que te hace la vida mas facil :smile: . Tambien podrias usar [Railway](https://railway.app/), pero ten en cuenta que con este si necesitas dockerizacion.
 
 <br/>
 
@@ -78,13 +76,13 @@ Ya los datos están limpios, ahora es tiempo de investigar las relaciones que ha
 
 **`Sistema de recomendación`**: 
 
-Una vez que toda la data es consumible por la API ya lista para consumir para los departamentos de Analytics y de Machine Learning, y nuestro EDA bien realizado entendiendo bien los datos a los que tenemos acceso, es hora de entrenar nuestro modelo de machine learning para armar un sistema de recomendación de películas para usuarios, donde dado un id de usuario y una película, nos diga si la recomienda o no para dicho usuario. De ser posible, este sistema de recomendación debe ser deployado para tener una interfaz gráfica amigable para ser utilizada, utilizando Gradio o Deta Space para su deployment o bien con alguna solución como Streamlit o algo similar en local (tener el deployment del sistema de recomendación o una interfaz gráfica es un plus al proyecto).
+Una vez que toda la data es consumible por la API ya lista para consumir para los departamentos de Analytics y de Machine Learning, y nuestro EDA bien realizado entendiendo bien los datos a los que tenemos acceso, es hora de entrenar nuestro modelo de machine learning para armar un sistema de recomendación de películas para usuarios, donde dado un id de usuario y una película, nos diga si la recomienda o no para dicho usuario. De ser posible, este sistema de recomendación debe ser deployado para tener una interfaz gráfica amigable para ser utilizada, utilizando Gradio para su deployment o bien con alguna solución como Streamlit o algo similar en local (tener el deployment del sistema de recomendación o una interfaz gráfica es un plus al proyecto).
 
 <br/>
 
-**`Video`**: Sabes que la documentacion es una etapa importante en cualquier trabajo 👀. Hiciste diversos procesos nuevos para la empresa y no tienes tiempo de dejar un informe con toda la informacion relevante en este momento! Pero eres recursivo 🙂, asi que grabas un video donde muestras todo lo que hiciste para mostrarselo a tu equipo y asi tod@s pueden enteder todo lo que hiciste y para que lo hiciste.
+**`Video`**: Necesitas que al equipo le quede claro que tus herramientas funcionan realmente! Haces un video mostrando el resultado de las consultas propuestas y de tu modelo de ML entrenado!
 
-<sub> **Spoiler**: El video DEBE durar no mas de ***7 minutos*** y DEBE mostrar las consultas requeridas en funcionamiento desde la API** y una breve explicacion del modelo entrenado para el sistema de recomendacion. <sub/>
+<sub> **Spoiler**: El video NO DEBE durar mas de ***7 minutos*** y DEBE mostrar las consultas requeridas en funcionamiento desde la API** y una breve explicacion del modelo entrenado para el sistema de recomendacion. <sub/>
 
 <br/>
 
@@ -99,6 +97,14 @@ Una vez que toda la data es consumible por la API ya lista para consumir para lo
 NOTA: Recuerde entregar el link de acceso al video. Puede alojarse en YouTube, Drive o cualquier plataforma de almacenamiento. **Verificar que sea de acceso público**.
 
 <br/>
+Aqui te sintetizamos que es lo que consideramos un MVP aprobatorio, y la diferencia con un producto completo.
+
+
+
+<p align="center">
+<img src="https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data08_MLops/src/MVP_MLops.PNG"  height=250>
+</p>
+
 
 ## **Fuente de datos**
 
@@ -107,28 +113,9 @@ NOTA: Recuerde entregar el link de acceso al video. Puede alojarse en YouTube, D
 
 ## **Material de apoyo**
 
-Imagen Docker con Uvicorn/Guinicorn para aplicaciones web de alta performance:
+En este mismo repositorio podras encontrar algunos [links de ayuda](https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data08_MLops/Material%20de%20apoyo.md). Recuerda que no son los unicos recursos que puedes utilizar!
 
-+ https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/ 
 
-+ https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
-
-FAST API Documentation:
-
-+ https://fastapi.tiangolo.com/tutorial/
-  
- Gradio:
-  
-+ https://gradio.app/
-  
- Sistemas de Recomendación:
-  
-+ https://github.com/juliom86/awesome-RecSys
-
-"Prolijidad" del codigo:
-
-+ https://pandas.pydata.org/docs/development/contributing_docstring.html
-  
 
   
 <br/>
@@ -140,4 +127,3 @@ FAST API Documentation:
 + Cierre de formularios de entrega de proyectos: **Martes 21, 16:00hs gmt-3**
   
 + Demo: **Martes 21, 16:00hs gmt-3*** 
-
