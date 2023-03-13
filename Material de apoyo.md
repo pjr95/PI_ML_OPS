@@ -1,13 +1,21 @@
-Aqui podras empezar a familiarizarte con los conceptos que seran claves para el desarrollo de este PI!
+Imagen Docker con Uvicorn/Guinicorn para aplicaciones web de alta performance:
 
++ https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/ 
 
-`Application Programming Interface`  es una interfaz que permite que dos aplicaciones se comuniquen entre sí, independientemente de la infraestructura subyacente. Son herramientas muy versátiles que permiten por ejemplo, crear pipelines facilitando mover y brindar acceso simple a los datos que se quieran disponibilizar a través de los diferentes endpoints, o puntos de salida de la API.
++ https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
 
-Hoy en día contamos con **FastAPI**, un web framework moderno y de alto rendimiento para construir APIs con Python.
-<p align=center>
-<img src = 'https://i.ibb.co/9t3dD7D/blog-zenvia-imagens-3.png' height=250><p>
-  
-  
 FAST API Documentation:
 
 + https://fastapi.tiangolo.com/tutorial/
+  
+ Gradio:
+  
++ https://gradio.app/
+  
+ Sistemas de Recomendación:
+  
++ https://github.com/juliom86/awesome-RecSys
+
+"Prolijidad" del codigo:
+
++ https://pandas.pydata.org/docs/development/contributing_docstring.html
