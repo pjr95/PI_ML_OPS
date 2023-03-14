@@ -112,7 +112,7 @@ Aqui te sintetizamos que es lo que consideramos un MVP aprobatorio, y la diferen
 
 ## **Material de apoyo**
 
-En este mismo repositorio podras encontrar algunos [links de ayuda](https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data08_MLops/Material%20de%20apoyo.md). Recuerda que no son los unicos recursos que puedes utilizar!
+En este mismo repositorio podras encontrar algunos [links de ayuda](https://github.com/HX-PRomero/PI_ML_OPS/blob/main/Material%20de%20apoyo.md). Recuerda que no son los unicos recursos que puedes utilizar!
 
 
   
