@@ -30,7 +30,7 @@ Vas a sus datos y te das cuenta que la madurez de los mismos es poca (ok, es nul
 Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tener un **`MVP`** (_Minimum Viable Product_) para la próxima semana! Tu cabeza va a explotar 🤯, pero al menos sabes cual es, conceptualmente, el camino que debes de seguir :exclamation:. Así que te espantas los miedos y te pones manos a la obra :muscle:
 
 <p align="center">
-<img src="https://github.com/HX-PRomero/PI_ML_OPS/blob/main/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
+<img src="https://github.com/HX-PRomero/PI_ML_OPS/raw/main/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
 </p>
 
 <sub> Nota que aqui se reflejan procesos no herramientas tecnologicas. Has el ejercicio de entender cual herramienta del stack corresponde a cual parte del proceso<sub/>
@@ -54,13 +54,14 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 
 **`Desarrollo API`**:   Propones disponibilizar los datos de la empresa usando el framework ***FastAPI***. Las consultas que propones son las siguientes:
 
-+ Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
+Deben crear 6 funciones para los endpoints que se consumirán en la API, recuerden que deben tener un decorador por cada una (@app.get(‘/’)).
++ Película (sólo película, no serie, ni documentales, etc) con mayor duración según año, plataforma y tipo de duración. La función debe llamarse get_max_duration(year, platform, duration_type) y debe devolver sólo el string del nombre de la película.
++ Cantidad de películas (sólo películas, no series, ni documentales, etc) según plataforma, con un puntaje mayor a XX en determinado año. La función debe llamarse get_score_count(platform, scored, year) y debe devolver un int, con el total de películas que cumplen lo solicitado.
++ Cantidad de películas (sólo películas, no series, ni documentales, etc) según plataforma. La función debe llamarse get_count_platform(platform) y debe devolver un int, con el número total de películas de esa plataforma. Las plataformas deben llamarse amazon, netflix, hulu, disney.
++ Actor que más se repite según plataforma y año. La función debe llamarse get_actor(platform, year) y debe devolver sólo el string con el nombre del actor que más se repite según la plataforma y el año dado.
++ La cantidad de contenidos/productos (todo lo disponible en streaming) que se publicó por país y año. La función debe llamarse prod_per_county(tipo,pais,anio) deberia devolver el tipo de contenido (pelicula,serie,documental) por pais y año en un diccionario con las variables llamadas 'pais' (nombre del pais), 'anio' (año), 'pelicula' (tipo de contenido).
++ La cantidad total de contenidos/productos (todo lo disponible en streaming, series, documentales, peliculas, etc) según el rating de audiencia dado (para que publico fue clasificada la pelicula). La función debe llamarse get_contents(rating) y debe devolver el numero total de contenido con ese rating de audiencias.
 
-+ Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (la función debe llamarse get_score_count(platform, scored, year))
-
-+ Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
-
-+ Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
 
 
 <br/>
@@ -76,7 +77,7 @@ Ya los datos están limpios, ahora es tiempo de investigar las relaciones que ha
 
 **`Sistema de recomendación`**: 
 
-Una vez que toda la data es consumible por la API ya lista para consumir para los departamentos de Analytics y de Machine Learning, y nuestro EDA bien realizado entendiendo bien los datos a los que tenemos acceso, es hora de entrenar nuestro modelo de machine learning para armar un sistema de recomendación de películas para usuarios, donde dado un id de usuario y una película, nos diga si la recomienda o no para dicho usuario. De ser posible, este sistema de recomendación debe ser deployado para tener una interfaz gráfica amigable para ser utilizada, utilizando Gradio para su deployment o bien con alguna solución como Streamlit o algo similar en local (tener el deployment del sistema de recomendación o una interfaz gráfica es un plus al proyecto).
+Una vez que toda la data es consumible por la API, está lista para consumir por los departamentos de Analytics y Machine Learning, y nuestro EDA nos permite entender bien los datos a los que tenemos acceso, es hora de entrenar nuestro modelo de machine learning para armar un sistema de recomendación de películas. Éste consiste en recomendar películas a los usuarios basándose en películas similares, por lo que se debe encontrar la similitud de puntuación entre esa película y el resto de películas, se ordenarán según el score y devolverá una lista de Python con 5 valores, cada uno siendo el string del nombre de las películas con mayor puntaje, en orden descendente. Debe ser deployado como una función adicional de la API anterior y debe llamarse get_recommendation(titulo: str).
 
 <br/>
 
@@ -100,8 +101,9 @@ NOTA: Recuerde entregar el link de acceso al video. Puede alojarse en YouTube, D
 Aqui te sintetizamos que es lo que consideramos un MVP aprobatorio, y la diferencia con un producto completo.
 
 
+
 <p align="center">
-<img src="https://github.com/HX-PRomero/PI_ML_OPS/blob/main/src/MVP_MLops.png"  height=250>
+<img src="https://github.com/soyHenry/DS_LABS/blob/main/Proyectos/Proyectos%20Individuales/PI01/Data08_MLops/src/MVP_MLops.PNG"  height=250>
 </p>
 
 
@@ -112,7 +114,8 @@ Aqui te sintetizamos que es lo que consideramos un MVP aprobatorio, y la diferen
 
 ## **Material de apoyo**
 
-En este mismo repositorio podras encontrar algunos [links de ayuda](https://github.com/HX-PRomero/PI_ML_OPS/blob/main/Material%20de%20apoyo.md). Recuerda que no son los unicos recursos que puedes utilizar!
+En este mismo repositorio podras encontrar algunos [links de ayuda](hhttps://github.com/HX-PRomero/PI_ML_OPS/raw/main/Material%20de%20apoyo.md). Recuerda que no son los unicos recursos que puedes utilizar!
+
 
 
   
@@ -120,8 +123,8 @@ En este mismo repositorio podras encontrar algunos [links de ayuda](https://gith
 
 ## **Deadlines importantes**
 
-+ Apertura de formularios de entrega de proyectos: **Lunes 20, 10:00 hs gmt -3**
++ Apertura de formularios de entrega de proyectos: **Lunes 17, 10:00 hs gmt -3**
 
-+ Cierre de formularios de entrega de proyectos: **Martes 21, 16:00hs gmt-3**
++ Cierre de formularios de entrega de proyectos: **Martes 18, 16:00hs gmt-3**
   
-+ Demo: **Martes 21, 16:00hs gmt-3*** 
++ Demo: **Martes 18, 16:00hs gmt-3*** 
