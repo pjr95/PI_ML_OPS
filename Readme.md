@@ -43,6 +43,8 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 + Algunos campos, como **`belongs_to_collection`**, **`production_companies`** y otros (ver diccionario de datos) están anidados, esto es o bien tienen un diccionario o una lista como valores en cada fila, ¡deberán desanidarlos para poder  y unirlos al dataset de nuevo hacer alguna de las consultas de la API! O bien buscar la manera de acceder a esos datos sin desanidarlos.
 
 + Los valores nulos de los campos **`revenue`**, **`budget`** deben ser rellenados por el número **`0`**.
+  
++ Los valores nulos del campo **`release date`** deben eliminarse.
 
 + De haber fechas, deberán tener el formato **`AAAA-mm-dd`**, además deberán crear la columna **`release_year`** donde extraerán el año de la fecha de estreno.
 
