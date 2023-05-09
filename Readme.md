@@ -59,11 +59,11 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 Deben crear 6 funciones para los endpoints que se consumirán en la API, recuerden que deben tener un decorador por cada una (@app.get(‘/’)).
   
 + def peliculas_mes(mes):
-    '''Se ingresa el mes y la funcion retorna la cantidad de peliculas que se estrenaron ese mes historicamente'''
+    '''Se ingresa el mes y la funcion retorna la cantidad de peliculas que se estrenaron ese mes (nombre del mes, en str, ejemplo 'enero') historicamente'''
     return {'mes':mes, 'cantidad':respuesta}
 
 + def peliculas_dia(dia):
-    '''Se ingresa el dia y la funcion retorna la cantidad de peliculas que se estrebaron ese dia historicamente'''
+    '''Se ingresa el dia y la funcion retorna la cantidad de peliculas que se estrenaron ese dia (de la semana, en str, ejemplo 'lunes') historicamente'''
     return {'dia':dia, 'cantidad':respuesta}
 
 + def franquicia(franquicia):
