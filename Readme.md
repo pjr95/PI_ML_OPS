@@ -57,6 +57,7 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 **`Desarrollo API`**:   Propones disponibilizar los datos de la empresa usando el framework ***FastAPI***. Las consultas que propones son las siguientes:
 
 Deben crear 6 funciones para los endpoints que se consumirán en la API, recuerden que deben tener un decorador por cada una (@app.get(‘/’)).
+  
 + def peliculas_mes(mes):
     '''Se ingresa el mes y la funcion retorna la cantidad de peliculas que se estrenaron ese mes historicamente'''
     return {'mes':mes, 'cantidad':respuesta}
@@ -77,7 +78,7 @@ Deben crear 6 funciones para los endpoints que se consumirán en la API, recuerd
     '''Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron'''
     return {'productora':productora, 'ganancia_total':respuesta, 'cantidad':respuesta}
 
-+ def retorno(peliculaa):
++ def retorno(pelicula):
     '''Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo'''
     return {'pelicula':pelicula, 'inversion':respuesta, 'ganacia':respuesta,'retorno':respuesta, 'anio':respuesta}
 
