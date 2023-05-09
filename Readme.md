@@ -57,13 +57,33 @@ Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tene
 **`Desarrollo API`**:   Propones disponibilizar los datos de la empresa usando el framework ***FastAPI***. Las consultas que propones son las siguientes:
 
 Deben crear 6 funciones para los endpoints que se consumirán en la API, recuerden que deben tener un decorador por cada una (@app.get(‘/’)).
-+ Cantidad de películas producidas por un determinado país en determinado año. La función debe llamarse get_country(year, country) y debe devolver sólo número de películas producidas por dicho país en dicho año.
-+ Recaudacion por productora y por año. La función debe llamarse get_company_revenue(company, year) y debe devolver un int, con el total de dólares recaudados ese año por esa productora.
-+ Cantidad de películas que salieron en determinado año. La función debe llamarse get_count_movies(year) y debe devolver un int, con el número total de películas que salieron ese año.
-+ Película con mayor retorno en determinado año. La función debe llamarse get_return(title, year) y debe devolver sólo el string con el nombre de la película con mayor retorno de inversión en ese año.
-+ Película con el menor presupuesto en determinado año. La función debe llamarse get_min_budget(year) deberia devolver el string con el nombre de la película, el año de estreno y el presupuesto, en un diccionario con las llaves llamadas 'title', 'year', 'budget' y cada una con su valor correspondiente.
-+ Lista con las 5 franquicias, colleciones o series de películas que más recaudaron históricamente. La función se llamará get_collection_revenue() y debería devolver una lista de longitud 5 que contenga el nombre en string de las 5 franquicias que más recaudaron históricamente.
++ def peliculas_mes(mes):
+    '''Se ingresa el mes y la funcion retorna la cantidad de peliculas que se estrenaron ese mes historicamente'''
+    return {'mes':mes, 'cantidad':respuesta}
 
++ def peliculas_dia(dia):
+    '''Se ingresa el dia y la funcion retorna la cantidad de peliculas que se estrebaron ese dia historicamente'''
+    return {'dia':dia, 'cantidad':respuesta}
+
++ def franquicia(franquicia):
+    '''Se ingresa la franquicia, retornando la cantidad de peliculas, ganancia total y promedio'''
+    return {'franquicia':franquicia, 'cantidad':respuesta, 'ganancia_total':respuesta, 'ganancia_promedio':respuesta}
+
++ def peliculas_pais(pais):
+    '''Ingresas el pais, retornando la cantidad de peliculas producidas en el mismo'''
+    return {'pais':pais, 'cantidad':respuesta}
+
++ def productoras(productora):
+    '''Ingresas la productora, retornando la ganancia total y la cantidad de peliculas que produjeron'''
+    return {'productora':productora, 'ganancia_total':respuesta, 'cantidad':respuesta}
+
++ def retorno(peliculaa):
+    '''Ingresas la pelicula, retornando la inversion, la ganancia, el retorno y el año en el que se lanzo'''
+    return {'pelicula':pelicula, 'inversion':respuesta, 'ganacia':respuesta,'retorno':respuesta, 'anio':respuesta}
+
++ def recomendacion('titulo'):
+    '''Ingresas un nombre de pelicula y te recomienda las similares en una lista de 5 valores'''
+    return {'lista recomendada': respuesta}
 
 
 <br/>
